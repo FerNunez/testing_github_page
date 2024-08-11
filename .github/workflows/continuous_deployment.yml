@@ -11,9 +11,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: read
 
     steps:
       - uses: actions-rs/toolchain@v1
