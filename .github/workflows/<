@@ -11,10 +11,6 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      contents: read
-
     steps:
       - uses: actions-rs/toolchain@v1
         with:
@@ -32,3 +28,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          permissions:
+            actions: write
+            contents: read
