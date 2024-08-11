@@ -13,7 +13,6 @@ impl Component for Index {
         false
     }
 
-
     fn change(&mut self, _: Self::Properties) -> ShouldRender {
         false
     }
@@ -27,8 +26,6 @@ impl Component for Index {
     }
 }
 
-
 fn main() {
     yew::start_app::<Index>();
 }
-
